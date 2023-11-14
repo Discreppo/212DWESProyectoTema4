@@ -25,9 +25,9 @@
                 //Declaración las constantes que almacenan los valores de la conexión.
                 require_once '../config/confDB.php';
                 // Se instancia un objeto tipo PDO que establece la conexion a la base de datos con el usuario especificado
-                $miDB = new PDO('mysql:host=' . host . '; dbname=' . dbname, username, password);
+                $miDB = new PDO(DNS , USERNAME, PASSWORD);
                 // Se preparan las consultas
-                $consulta = $miDB->prepare('select * from Departamento');
+                $consulta = $miDB->prepare('select * from T02_Departamento');
                 // Se ejecuta la consulta
                 $consulta->execute();
                 // Se almacena la primera fila de la consulta en un objeto
@@ -39,10 +39,11 @@
                  */
                 while ($oDepartamento = $consulta->fetchObject()) {
                     echo ("<tr>");
-                    echo ("<td>" . $oDepartamento->CodDepartamento . "</td>");
-                    echo ("<td>" . $oDepartamento->DescDepartamento . "</td>");
-                    echo ("<td>" . $oDepartamento->FechaBaja . "</td>");
-                    echo ("<td>" . $oDepartamento->VolumenNegocio . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_CodDepartamento . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_DescDepartamento . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_FechaCreacionDepartamento . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_VolumenDeNegocio . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_FechaBajaDepartamento . "</td>");
                     echo ("</tr>");
                 }                
                 echo('</table>');
@@ -65,9 +66,9 @@
                 //Declaración las constantes que almacenan los valores de la conexión.
                 require_once '../config/confDB.php';
                 // Se instancia un objeto tipo PDO que establece la conexion a la base de datos con el usuario especificado
-                $miDB = new PDO('mysql:host=' . host . '; dbname=' . dbname, username, password);
+                $miDB = new PDO(DNS , USERNAME, PASSWORD);
                 //Ejecutamos una query de consulta de la tabla Departamento.
-                $consulta = $miDB->query('select * from Departamento');                
+                $consulta = $miDB->query('select * from T02_Departamento');                
                 // Se almacena la primera fila de la consulta en un objeto
                 //$oDepartamento = $consulta->fetchObject(PDO::FETCH_OBJ);
                 // Se crea una tabla para imprimir las tuplas
@@ -77,10 +78,11 @@
                  */
                 while ($oDepartamento = $consulta->fetchObject()) {
                     echo ("<tr>");
-                    echo ("<td>" . $oDepartamento->CodDepartamento . "</td>");
-                    echo ("<td>" . $oDepartamento->DescDepartamento . "</td>");
-                    echo ("<td>" . $oDepartamento->FechaBaja . "</td>");
-                    echo ("<td>" . $oDepartamento->VolumenNegocio . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_CodDepartamento . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_DescDepartamento . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_FechaCreacionDepartamento . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_VolumenDeNegocio . "</td>");
+                    echo ("<td>" . $oDepartamento->T02_FechaBajaDepartamento . "</td>");
                     echo ("</tr>");
                 }
                 $numeroDeRegistros = $consulta->rowCount();
@@ -104,7 +106,7 @@
         </main>
         <footer>
             <p><a href="../index.html">Oscar Pascual Ferrero</a></p>
-            <p><a href="../indexProyectoTema4.php">Inicio</a> | <a href="https://github.com/discreppo" target="_blank" >GitHub</a></p>
+            <p><a href="../indexProyectoTema4.php">Inicio</a> | <a href="https://github.com/Discreppo/212DWESProyectoTema4" target="blank" >GitHub</a></p>
         </footer>
     </body>
 </html>
