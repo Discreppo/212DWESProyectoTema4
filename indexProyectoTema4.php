@@ -14,7 +14,7 @@
 
         <main>
             <!-- Contenido principal de tu sitio web -->
-            <h1>Scripts</h1>
+            <h1>Scripts </h1>
             <table>
                 <tr>
                     <th>Script DB</th>
@@ -71,24 +71,24 @@
                         DescDepartamento, si el usuario no pone nada deben aparecer todos los departamentos).</td>
                     <td><a href="codigoPHP/ejercicio00.php"></a>Ejecutar MySQLi</td>
                     <td><a href="mostrarcodigo/muestraEjercicio00.php"></a>Mostrar MySQLi</td>
-                    <td>Ejecutar PDO</td>
-                    <td>Mostrar PDO</td>
+                    <td><a href="codigoPHP/ejercicio04.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
+                    <td><a href="mostrarcodigo/muestraEjercicio04.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
                 </tr>
                 <tr>
                     <td>5. Pagina web que añade tres registros a nuestra tabla Departamento utilizando tres instrucciones
                         insert y una transacción, de tal forma que se añadan los tres registros o no se añada ninguno.</td>
                     <td><a href="codigoPHP/ejercicio00.php"></a>Ejecutar MySQLi</td>
                     <td><a href="mostrarcodigo/muestraEjercicio00.php"></a>Mostrar MySQLi</td>
-                    <td>Ejecutar PDO</td>
-                    <td>Mostrar PDO</td>
+                    <td><a href="codigoPHP/ejercicio05.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
+                    <td><a href="mostrarcodigo/muestraEjercicio05.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
                 </tr>
                 <tr>
                     <td>6. Pagina web que cargue registros en la tabla Departamento desde un array departamentosnuevos
                         utilizando una consulta preparada. </td>
                     <td><a href="codigoPHP/ejercicio00.php"></a>Ejecutar MySQLi</td>
                     <td><a href="mostrarcodigo/muestraEjercicio00.php"></a>Mostrar MySQLi</td>
-                    <td>Ejecutar PDO</td>
-                    <td>Mostrar PDO</td>
+                    <td><a href="codigoPHP/ejercicio06.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
+                    <td><a href="mostrarcodigo/muestraEjercicio06.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
                 </tr>
                 <tr>
                     <td>7. Página web que toma datos (código y descripción) de un fichero xml y los añade a la tabla
@@ -96,8 +96,8 @@
                         directorio .../tmp/ del servidor</td>
                     <td><a href="codigoPHP/ejercicio00.php"></a>Ejecutar MySQLi</td>
                     <td><a href="mostrarcodigo/muestraEjercicio00.php"></a>Mostrar MySQLi</td>
-                    <td>Ejecutar PDO</td>
-                    <td>Mostrar PDO</td>
+                    <td><a href="codigoPHP/ejercicio07.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
+                    <td><a href="mostrarcodigo/muestraEjercicio07.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
                 </tr>
                 <tr>
                     <td>8. Página web que toma datos (código y descripción) de la tabla Departamento y guarda en un
@@ -105,8 +105,8 @@
                         encuentra en el directorio .../tmp/ del servidor</td>
                     <td><a href="codigoPHP/ejercicio00.php"></a>Ejecutar MySQLi</td>
                     <td><a href="mostrarcodigo/muestraEjercicio00.php"></a>Mostrar MySQLi</td>
-                    <td>Ejecutar PDO</td>
-                    <td>Mostrar PDO</td>
+                    <td><a href="codigoPHP/ejercicio08.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
+                    <td><a href="mostrarcodigo/muestraEjercicio08.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
                 </tr>
             </table>
 
