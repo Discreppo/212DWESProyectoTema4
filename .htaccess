@@ -1,4 +1,4 @@
-DirectoryIndex index.html index.php
+DirectoryIndex indexProyectoTema4.php index.html index.php
 ErrorDocument 404 /212DWESProyectoTema4/errors/404.html
 ErrorDocument 403 /212DWESProyectoTema4/errors/403.html
 Redirect 301 /educa https://www.terra.com
