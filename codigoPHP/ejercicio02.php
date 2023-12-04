@@ -23,9 +23,9 @@
             // Utilizamos el bloque 'try'
             try {
                 //Declaración las constantes que almacenan los valores de la conexión.
-                require_once '../config/confDB.php';
+                require_once '../config/confDBPDO.php';
                 // Se instancia un objeto tipo PDO que establece la conexion a la base de datos con el usuario especificado
-                $miDB = new PDO(DNS , USERNAME, PASSWORD);
+                $miDB = new PDO(DSN , USERNAME, PASSWORD);
                 // Se preparan las consultas
                 $consulta = $miDB->prepare('select * from T02_Departamento');
                 // Se ejecuta la consulta

@@ -24,7 +24,7 @@
             // Se incuye la libreria de validacion para usar los metodos de validacion de las entradas del formulario
             require_once '../core/231018libreriaValidacion.php';
             // Incluyo la configuración de conexión a la BD
-            require_once '../config/confDB.php';
+            require_once '../config/confDBPDO.php';
             // La varible $entradaOK es un interruptor que recibe el valor true cuando no existe ningun error en la entrada
             $entradaOK = true;
             // El array $aRespuestas almacena los valores que son introducidos en cada input del formulario
@@ -84,7 +84,7 @@
             // Se ataca a la base de datos
             try {
                 // Se instancia un objeto tipo PDO que establece la conexion a la base de datos con el usuario especificado
-                $miDB = new PDO(DNS, USERNAME, PASSWORD);
+                $miDB = new PDO(DSN, USERNAME, PASSWORD);
 
                 // Se inicializa la consulta de insercion
                 $consulta = "select * from T02_Departamento where T02_DescDepartamento like '%" . $aRespuestas['descDepartamentoABuscar'] . "%';";
