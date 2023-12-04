@@ -22,12 +22,12 @@
             // Incluyo la libreria de validación para comprobar los campos
             require_once '../core/231018libreriaValidacion.php';
             // Incluyo la configuración de conexión a la BD
-            require_once '../config/confDB.php';
+            require_once '../config/confDBPDO.php';
 
             try {
                 // CONEXION CON LA BD
                 // Establecemos la conexión por medio de PDO
-                $miDB = new PDO(DNS, USERNAME, PASSWORD);
+                $miDB = new PDO(DSN, USERNAME, PASSWORD);
                 echo ("<div class='respuestaCorrecta'>CONEXIÓN EXITOSA POR PDO</div><br><br>"); // Mensaje si la conexión es exitosa
                 // CONSULTAS Y TRANSACCION
                 $miDB->beginTransaction(); // Deshabilitamos el modo autocommit

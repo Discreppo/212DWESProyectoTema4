@@ -14,24 +14,49 @@
 
         <main>
             <!-- Contenido principal de tu sitio web -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fichero de Configuración con la Base de Datos</th>
+                        <th>Código</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Configuración DB PDO:</td>
+                        <td><a href="mostrarCodigo/muestraconfDBPDO.php"><img src="webroot/image/botonFavicon.png" width="30px"/></a></td>
+                    </tr>
+                    <tr>
+                        <td>Configuración DB MYSQLI:</td>
+                        <td><a href="mostrarCodigo/muestraconfDB_MySQLi.php"><img src="webroot/image/botonFavicon.png" width="30px"/></a></td>
+                    </tr>
+                </tbody>
+            </table>
             <h1>Scripts </h1>
             <table>
                 <tr>
-                    <th>Script DB</th>
-                    <th>Mostrar entorno desarrollo</th>
-                    <th>Mostrar entorno explotación</th>
+                    <th>Scripts - SQL</th>                    
+                    <th>Código - Desarrollo</th>
+                    <th>Ejecutar - Explotación</th>
+                    <th>Código - Explotación</th>
                 </tr>
                 <tr>
-                    <td>Crea estructura de la base de datos</td> 
-                    <td><a href="mostrarcodigo/mostrarScriptCreaDB.php">Mostrar</a></td>
+                    <td>Crea estructura de la base de datos</td>                    
+                    <td><a href="mostrarcodigo/mostrarScriptCreaDB.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
+                    <td><a href="scriptDB/CreaDB212DWESProyectoTema4.php"><img src="webroot/image/cross.webp" width="30px"/></a></td>
+                    <td><a href="mostrarcodigo/muestraScriptDBCrea.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
                 </tr>                
                 <tr>
-                    <td>Incluye los datos de la tabla indicada</td>
-                    <td><a href="mostrarcodigo/mostrarScriptCargaInicialDB.php">Mostrar</a></td>
+                    <td>Incluye los datos de la tabla indicada</td>                    
+                    <td><a href="mostrarcodigo/mostrarScriptCargaInicialDB.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
+                    <td><a href="scriptDB/CargaInicialDB212DWESProyectoTema4.php"><img src="webroot/image/cross.webp" width="30px"/></a></td>
+                    <td><a href="mostrarcodigo/muestraScriptDBCargaInicial.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
                 </tr>                
                 <tr>
-                    <td>Elimina todo</td> 
-                    <td><a href="mostrarcodigo/mostrarScriptBorraDB.php">Mostrar</a></td>
+                    <td>Elimina todo</td>                     
+                    <td><a href="mostrarcodigo/mostrarScriptBorraDB.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
+                    <td><a href="scriptDB/BorraDB212DWESProyectoTema4.php"><img src="webroot/image/cross.webp" width="30px"/></a></td>
+                    <td><a href="mostrarcodigo/muestraScriptDBCargaInicial.php"><img src="webroot/image/botonFavicon.png" width="30px"></a></td>
                 </tr>
             </table>
             <h1>Tabla de Ejercicios</h1>
@@ -42,7 +67,7 @@
                     <th>Código MySQLi</th>
                     <th>Ejecución PDO</th>
                     <th>Código PDO</th>
-                    
+
                 </tr>
                 <tr>
                     <td>1. (ProyectoTema4) Conexión a la base de datos con la cuenta usuario y tratamiento de errores.</td>
